@@ -1,7 +1,9 @@
 <!DOCTYPE CrossStudio_Session_File>
 <session>
  <Bookmarks/>
- <Breakpoints groups="Breakpoints" active_group="Breakpoints"/>
+ <Breakpoints groups="Breakpoints" active_group="Breakpoints">
+  <Exceptions set="MemManage;UsageFault_Coprocessor;UsageFault_CheckingError;UsageFault_StateError;BusFault;ExceptionEntryReturnFault;HardFault"/>
+ </Breakpoints>
  <ExecutionProfileWindow/>
  <FrameBufferWindow>
   <FrameBufferWindow bufferHeight="-1" addressSpace="" addressText="" bufferWidth="-1"/>
@@ -24,6 +26,9 @@
  </Memory4>
  <Project>
   <ProjectSessionItem path="examples"/>
+  <ProjectSessionItem path="examples;beaconing"/>
+  <ProjectSessionItem path="examples;beaconing;Application"/>
+  <ProjectSessionItem path="examples;beaconing;Mesh Access"/>
   <ProjectSessionItem path="examples;mesh"/>
   <ProjectSessionItem path="examples;mesh;Mesh Core"/>
  </Project>
@@ -59,13 +64,13 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="130" useTextEdit="1" useBinaryEdit="0" left="0" path="beaconing/src/main.c" debugPath="beaconing/src/main.c" selected="0" top="43" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="1253" useTextEdit="1" useBinaryEdit="0" left="0" path="../mesh/src/core/transport.c" debugPath="../mesh/src/core/transport.c" selected="0" top="1220" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="158" y="370" useTextEdit="1" useBinaryEdit="0" left="0" path="../mesh/src/core/bearer_adv.c" debugPath="../mesh/src/core/bearer_adv.c" selected="1" top="349" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="446" useTextEdit="1" useBinaryEdit="0" left="0" path="../mesh/src/core/bearer.c" debugPath="../mesh/src/core/bearer.c" selected="0" top="425" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="270" useTextEdit="1" useBinaryEdit="0" left="0" path="../mesh/src/core/nrf_mesh.c" debugPath="D:/JoeyDoNotDelete/Work/BLE_prototype/nrf5_SDK_for_Mesh_v0.9.2-Alpha_ModifiedVersion/mesh/src/core/nrf_mesh.c" selected="0" top="253" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="125" useTextEdit="1" useBinaryEdit="0" left="0" path="beaconing/src/main.c" debugPath="beaconing/src/main.c" selected="1" top="79" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="28" y="1246" useTextEdit="1" useBinaryEdit="0" left="0" path="../mesh/src/core/transport.c" debugPath="../mesh/src/core/transport.c" selected="0" top="707" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="24" y="378" useTextEdit="1" useBinaryEdit="0" left="0" path="../mesh/src/core/bearer_adv.c" debugPath="../mesh/src/core/bearer_adv.c" selected="0" top="330" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="446" useTextEdit="1" useBinaryEdit="0" left="0" path="../mesh/src/core/bearer.c" debugPath="../mesh/src/core/bearer.c" selected="0" top="392" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="270" useTextEdit="1" useBinaryEdit="0" left="0" path="../mesh/src/core/nrf_mesh.c" debugPath="D:/JoeyDoNotDelete/Work/BLE_prototype/nrf5_SDK_for_Mesh_v0.9.2-Alpha_ModifiedVersion/mesh/src/core/nrf_mesh.c" selected="0" top="265" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="141" useTextEdit="1" useBinaryEdit="0" left="0" path="../mesh/src/core/fifo.c" debugPath="../mesh/src/core/fifo.c" selected="0" top="120" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="281" useTextEdit="1" useBinaryEdit="0" left="0" path="../mesh/src/core/timer_scheduler.c" debugPath="../mesh/src/core/timer_scheduler.c" selected="0" top="266" codecName="Default"/>
  </Files>
- <ARMCrossStudioWindow activeProject="beaconing" fileDialogDefaultFilter="*.c" autoConnectTarget="J-Link" buildConfiguration="nRF52832_XXAA Debug" debugSearchFileMap="D:/JoeyDoNotDelete/Work/BLE_prototype/nrf5_SDK_for_Mesh_v0.9.2-Alpha_ModifiedVersion/examples/beaconing/src/main.c&#xa;C:/Users/IvanChui/Downloads/iBeacon_wID/examples/beaconing/src/main.c" fileDialogInitialDirectory="C:/Users/IvanChui/Downloads/iBeacon_wID/examples/beaconing/src" debugSearchPath="" autoConnectCapabilities="3199"/>
+ <ARMCrossStudioWindow activeProject="beaconing" fileDialogDefaultFilter="*.asm;*.s;*.inc" autoConnectTarget="J-Link" buildConfiguration="nRF52832_XXAA Debug" debugSearchFileMap="C:/Program Files/SEGGER/SEGGER Embedded Studio 3.26a/source/thumb_crt0.s&#xa;&#xa;D:/JoeyDoNotDelete/Work/BLE_prototype/nrf5_SDK_for_Mesh_v0.9.2-Alpha_ModifiedVersion/examples/beaconing/src/main.c&#xa;C:/Users/IvanChui/Downloads/iBeacon_wID/examples/beaconing/src/main.c" fileDialogInitialDirectory="C:/Users/IvanChui/Downloads/iBeacon_wID/examples/beaconing/src" debugSearchPath="" autoConnectCapabilities="3711"/>
 </session>

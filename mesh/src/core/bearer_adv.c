@@ -367,6 +367,7 @@ static void adv_evt_timeout(timestamp_t timestamp, void * p_context)
     uint8_t ch_map = p_advertiser->adv_channel_map;
     const bool free_on_end = (p_advertiser->internal.tx_evt.transmits == 1);
 
+    //increment MINOR_LOW_BYTE by 1 for each transmitted beacon, used as a timestamp for beacon sniffer
     #define MINOR_LOW_BYTE_OFFSET 28
         __LOG(LOG_SRC_BEARER, LOG_LEVEL_DBG1, "payload[MINOR_LOW_BYTE_OFFSET]:%x \n", p_advertiser->internal.tx_evt.p_packet->payload[MINOR_LOW_BYTE_OFFSET]++);
 
